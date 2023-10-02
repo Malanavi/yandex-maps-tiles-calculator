@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Калькулятор плиток Яндекс.Карт</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Калькулятор плиток Яндекс.Карт</h1>
+    <form id="calcForm">
+      <label for="latitude">Широта:</label>
+      <input type="text" id="latitude" placeholder="Введите широту">
+
+      <label for="longitude">Долгота:</label>
+      <input type="text" id="longitude" placeholder="Введите долготу">
+
+      <label for="zoom">Масштаб:</label>
+      <input type="number" id="zoom" placeholder="Введите масштаб">
+
+      <button type="submit">Рассчитать</button>
+    </form>
+
+    <div id="result">
+      <div id="mapTile">
+        <h3>Плитка карты:</h3>
+        <p>X: <span id="tileX"></span></p>
+        <p>Y: <span id="tileY"></span></p>
+      </div>
+
+      <div id="mapPreview">
+        <h3>Превью карты:</h3>
+        <img id="previewImage" src="" alt="Превью карты">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
